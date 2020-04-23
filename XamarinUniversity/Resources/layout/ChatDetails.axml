@@ -11,12 +11,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp" />
+    <Button
+        android:id="@+id/cameraButton"
+        android:text="Take a Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-    <ListView
+    <TextView
         android:id="@+id/messageListView"
         android:layout_width="match_parent"
         android:layout_height="441.5dp"/>
    
+     <Button
+        android:text="Send Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLocation" />
 
     <LinearLayout
         android:layout_width="match_parent"
