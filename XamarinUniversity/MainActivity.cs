@@ -28,7 +28,7 @@ namespace XamarinUniversity
 
 		private void Fab_Click(object sender, EventArgs e)  //add chat act
 		{
-			var intent = new Intent(this, typeof(ChatDetailsActivity));
+			var intent = new Intent(this, typeof(CreateChat));
 			StartActivity(intent);
 		}
 
