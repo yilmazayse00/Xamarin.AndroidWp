@@ -4,6 +4,7 @@ using Android.Widget;
 using Android.Content;
 using Refractored.Fab;
 using System;
+using Xamarin.Essentials;
 
 namespace XamarinUniversity
 {
@@ -24,11 +25,21 @@ namespace XamarinUniversity
 			FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
 			fab.Click += Fab_Click;
 
+			Accelerometer.ShakeDetected += Accelerometer_ShakeDetected;
+			Accelerometer.Start(SensorSpeed.Default);
+
+		}
+
+		private void Accelerometer_ShakeDetected(object sender, EventArgs e)
+		{
+			var intent = new Intent(this, typeof(CreateChatActivity));
+
+			StartActivity(intent);
 		}
 
 		private void Fab_Click(object sender, EventArgs e)  //add chat act
 		{
-			var intent = new Intent(this, typeof(CreateChat));
+			var intent = new Intent(this, typeof(CreateChatActivity));
 			StartActivity(intent);
 		}
 
