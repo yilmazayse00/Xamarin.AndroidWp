@@ -1,0 +1,10 @@
+ImageView;obj\Debug\res\layout\instructordetails.xml
+ImageView;obj\Debug\res\layout\instructorrow.xml
+LinearLayout;obj\Debug\res\layout\instructordetails.xml
+LinearLayout;obj\Debug\res\layout\main.xml
+ListView;obj\Debug\res\layout\main.xml
+RelativeLayout;obj\Debug\res\layout\instructorrow.xml
+resources;obj\Debug\res\values\strings.xml
+string;obj\Debug\res\values\strings.xml
+TextView;obj\Debug\res\layout\instructordetails.xml
+TextView;obj\Debug\res\layout\instructorrow.xml

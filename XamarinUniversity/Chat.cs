@@ -1,3 +1,4 @@
+using System;
 namespace XamarinUniversity
 {
 	public class Chat
